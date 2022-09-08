@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
 /*
 COLORS:
 
@@ -17,7 +17,9 @@ Dark green: #28b485
 
 body {
     font-family: "Roboto", sans-serif;
-    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
 }
 
 h1{
@@ -67,7 +69,7 @@ h6{
 .navbar i:hover,
 .bg-light .navbar-nav .nav-link.active
 .navbar i:hover {
-    color: rgb(177, 44, 44);
+    color: #b12c2c;
 }
 
 .navbar i {
@@ -78,6 +80,41 @@ h6{
     cursor: pointer;
     margin-left: 10px;
 }
+
+.landing{
+    height: 95vh;
+    background-image: linear-gradient(to right, #3dec9a56, #2ba83579 ), url("../imgs/grocery_03.png");
+    background-size: cover;
+    background-position: top;
+}
+
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary{
+    color: #b12c2c;
+    text-transform: uppercase;
+}
+
+.heading-main{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+}
+
+
+.heading-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 16.5px;
+}
+
 
 div .form-label{
     padding-left: 30px;
@@ -90,21 +127,21 @@ div .form-label{
     
 }
 
-#home {
-    width: 100%;
+/* #home {
+    width: 80%;
     height: 100vh;
     background-size:cover;
     background-image: linear-gradient(
         to right bottom,
         #7ed56f8a, #28b4857a),
-        url("../img/grocery_03.png");
+        url("../img/grocery_03.png"); 
     background-position: top;
     display: flex;
     flex-direction: row;
     justify-content:start;
     align-items: flex-start; 
     padding-top: 14rem;
-}
+} */
 
 #home span{
     color: rgb(177, 44, 44);
@@ -148,9 +185,9 @@ button{
 
 .sidebar {
   margin: 0;
-  padding: 0;
+  padding:  0;
   width: 200px;
-  background-color: #105db4;
+  background-color: #7df0ad;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -159,25 +196,37 @@ button{
 .sidebar a {
   display: block;
   color: black;
-  padding: 6px;
+  padding: 2px;
   text-decoration: none;
+}
+
+.sidebar-body{
+    margin-top: 60px;
+    
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
 }
  
 .sidebar a.active {
-  background-color: #04AA6D;
+  background-color: #2ba835;
   color: white;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .sidebar a:hover:not(.active) {
-  background-color: #555;
+  background-color: #b12c2c;
   color: white;
-}
+} 
 
-div.content {
+ div .content {
   margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
-}
+} 
 
 @media screen and (max-width: 700px) {
   .sidebar {
