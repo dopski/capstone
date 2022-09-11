@@ -19,7 +19,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    padding: 5px;
+    padding: 0;
 }
 
 h1{
@@ -227,6 +227,22 @@ ul{
   padding: 1px 16px;
   height: 1000px;
 } 
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #b12c2c;
+   color: white;
+   
+}
+.footer div{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-left: 210px;
+}
 
 @media screen and (max-width: 700px) {
   .sidebar {
